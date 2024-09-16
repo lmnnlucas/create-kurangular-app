@@ -6,9 +6,9 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 
 program
-    .version('0.0.3')
+    .version('0.0.4')
     .command('create')
-    .description('Create a new Angular project using my custom template')
+    .description('Create une application angular, en utilisant mon template Tailwind.')
     .action(async () => {
         try {
             const {name, tailwind} = await inquirer.prompt([
